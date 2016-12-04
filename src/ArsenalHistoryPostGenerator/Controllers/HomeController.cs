@@ -18,7 +18,7 @@ namespace ArsenalHistoryPostGenerator.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(Parameters.FrontMatterDictionary);
         }
         [HttpPost]
         public IActionResult Index(Dictionary<string, string> parameters, string filename)
@@ -26,7 +26,7 @@ namespace ArsenalHistoryPostGenerator.Web.Controllers
             _generateFile.GenerateMarkdownFile(filename, parameters);
 
 
-            return View();
+            return View(parameters);
         }
     }
 }
