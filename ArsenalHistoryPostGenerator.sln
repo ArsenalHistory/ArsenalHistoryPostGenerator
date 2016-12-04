@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArsenalHistoryPostGenerator.Web", "src\ArsenalHistoryPostGenerator\ArsenalHistoryPostGenerator.Web.xproj", "{1A7AB765-2AAD-428F-807B-502D14CEF433}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArsenalHistoryPostGenerator.Web", "src\ArsenalHistoryPostGenerator.Web\ArsenalHistoryPostGenerator.Web.xproj", "{1A7AB765-2AAD-428F-807B-502D14CEF433}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArsenalHistoryPostGenerator.Domain", "src\ArsenalHistoryPostGenerator.Domain\ArsenalHistoryPostGenerator.Domain.xproj", "{60B43477-CBDD-4FF8-9942-ED1F25891D1E}"
 EndProject
