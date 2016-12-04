@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ArsenalHistoryPostGenerator.Domain;
 
 namespace ArsenalHistoryPostGenerator
 {
@@ -29,6 +30,8 @@ namespace ArsenalHistoryPostGenerator
         {
             // Add framework services.
             services.AddMvc();
+            services.AddTransient<IGenerateFile,GenerateFile>();
+            services.AddSingleton<IConfiguration>(x => Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +39,7 @@ namespace ArsenalHistoryPostGenerator
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
 
             if (env.IsDevelopment())
             {
